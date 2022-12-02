@@ -123,7 +123,7 @@ define('DB_NAME', 'webdevkin');
               <?php } $conn ->close();?>
             </select><br>
             <input type="password" class="form-control" name="password"
-            id="password" placeholder="Введите пароль" style="width: 300px; height: 30px; margin-left: auto; margin-right: auto;"><br>
+            id="password_change_user" placeholder="Введите пароль" style="width: 300px; height: 30px; margin-left: auto; margin-right: auto;"><br>
             <button class="btn btn-success" type="submit" style="margin-left: auto; margin-right: auto;">Изменить пароль</button>
 
           </form>
@@ -210,11 +210,12 @@ define('DB_NAME', 'webdevkin');
         location.reload();
         }, 600000);
     </script>    
-    <script src="js/bootstrap.js" type="text/javascript"></script>
+    
     <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
+    <script src="js/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="js/jstree.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/jquery.jqGrid.min.js" type="text/javascript"></script>
     <script src="js/i18n/grid.locale-ru.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="js/bootstrap-editable.js" type="text/javascript"></script>

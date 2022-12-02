@@ -336,24 +336,27 @@ else { ?>
                 alert("Введите время отсутствия");  
                 return false;  
            }  
-           $.ajax({  
-                url:"php/insert.php",  
-                method:"POST",  
-                data:{division:division, 
-                      title:title,
-                      unit:unit, 
-                      reason:reason,
-                      place:place, 
-                      time:time,
-                      id_category:localStorage.getItem('id_category')
-                    },  
-                dataType:"text",  
-                success:function(data)  
-                {  
-                     
-                     fetch_data();  
-                }  
-           })  
+
+
+           if (confirm("Добавить отсутствующего?")) {
+              $.ajax({  
+                    url:"php/insert.php",  
+                    method:"POST",  
+                    data:{division:division, 
+                          title:title,
+                          unit:unit, 
+                          reason:reason,
+                          place:place, 
+                          time:time,
+                          id_category:localStorage.getItem('id_category')
+                        },  
+                    dataType:"text",  
+                    success:function(data)  
+                    {  
+                        fetch_data();
+                    }  
+              }); 
+            } 
       });  
       function edit_data(id, text, column_name)  
       {  
