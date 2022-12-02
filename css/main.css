@@ -1,0 +1,95 @@
+body {
+    font-family: 
+    "Arial";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 50px;
+}
+
+.column {
+    display: inline-block;
+    
+    vertical-align: top;    
+}
+
+#button-save {
+    text-align: center;	
+    display: none;
+  }
+
+#button-cancel {
+    text-align: center;	
+    display: none;
+  }
+
+#button-change {
+    text-align: center;	
+  }
+
+#goods {
+    display: none;
+    width: 79%;
+}
+
+
+.header {
+    display: flex; 
+    justify-content:space-between;
+
+}
+
+.h1-1 {
+    padding: 0 50px;
+    margin: 20px auto;
+}
+
+#categories {
+    width: 20%;
+    
+}
+
+.table_column {
+    width: 10%;
+}
+
+
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: #000000;
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #000000;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-container .col {
+    border: 1px solid #000000;
+}
+
+#footer {
+    margin: 10px;
+}
+
+#body {
+    margin: 50px;
+}
