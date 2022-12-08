@@ -1,9 +1,9 @@
 <?php
     include "ChromePhp.php";
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'root');
-    define('DB_PASSWORD', 'root');
-    define('DB_NAME', 'webdevkin');
+    define('DB_USER', 'c19stroi');
+    define('DB_PASSWORD', 'F9-Siro@');
+    define('DB_NAME', 'c19stroi');
     
     $id = $_POST['login'];
     $password = $_POST['password'];
@@ -35,6 +35,6 @@
 
         setcookie('id', $user['id'], time() + 3600 * 24 * 30, "/");
     }
-    header('Location: /site');
+    header('Location: /');
     $conn ->close();
 ?>

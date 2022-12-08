@@ -1,8 +1,8 @@
 <?php
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_NAME', 'webdevkin');
+define('DB_USER', 'c19stroi');
+define('DB_PASSWORD', 'F9-Siro@');
+define('DB_NAME', 'c19stroi');
 ?>
 <!doctype html>
 <html>
@@ -17,7 +17,6 @@ define('DB_NAME', 'webdevkin');
     <link href="css/jstree/style.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen, projection" type="text/css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-editable.css" />
     <link href="css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css">  
   </head>
@@ -35,9 +34,7 @@ define('DB_NAME', 'webdevkin');
             <h1 align="center"><b>Военно-космическая академия <br> имени А.Ф.Можайского</b>
             <br>
             </h1>
-            <h2 align="center">Астрономическое время:<br> <div id="current_date_time_block2"><br><br></div></h2>
-             
-            
+            <h4 align="center">Астрономическое время:<br> <div id="current_date_time_block2"><br><br></div></h2>                     
             </div>
             
             <div class="h1-1">
@@ -210,9 +207,8 @@ define('DB_NAME', 'webdevkin');
         location.reload();
         }, 600000);
     </script>    
-    
+
     <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
-    <script src="js/jquery.jqGrid.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="js/jstree.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>

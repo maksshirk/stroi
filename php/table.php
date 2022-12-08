@@ -444,4 +444,4 @@ else { ?>
         location.reload();
         }, 60000);
     </script>    
-<script src="/site/js/table_script.js" type="text/javascript"></script>
+<script src="/js/table_script.js" type="text/javascript"></script>

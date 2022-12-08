@@ -5,7 +5,7 @@
 var app = (function($) {
 
     // Инициализируем нужные переменные
-    var ajaxUrl = '/site/php/function.php',
+    var ajaxUrl = '/php/function.php',
         ui = {
             $categories: $('#categories'),
             $goods: $('#goods'),
@@ -151,7 +151,7 @@ var app = (function($) {
         });
 
         $.ajax({
-            url: "/site/php/table.php",
+            url: "/php/table.php",
             data: data,
             method: 'GET',
             dataType: 'html',
@@ -166,7 +166,7 @@ var app = (function($) {
             }
         });
         $.ajax({
-            url: "/site/php/buttons.php",
+            url: "/php/buttons.php",
             data: data,
             method: 'GET',
             dataType: 'html',
@@ -273,7 +273,6 @@ var app = (function($) {
             dataType: 'json',
             success: function(resp) {
                 // Инициализируем дерево категорий
-                
                 if (resp.code === 'success') {
                     _initTree(resp.result);
                 } else {
