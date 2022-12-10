@@ -23,6 +23,7 @@ var app = (function($) {
     function _initTree(data) {
         if (getCookie('Admin_ID') == "90872944c69f7b73b50f29090db53d47")
             {
+            
             console.log("Мяу");
             var category;
             ui.$categories.jstree({
