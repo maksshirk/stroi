@@ -10,7 +10,7 @@
     $password = md5($password."gsadfbxcvbxcvdsf"); 
     $conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-    if ($id == "0") {
+    if ($id == "1") {
         $query="SELECT * FROM categories WHERE `id` = $id AND `password` = '$password'";
         $result = $conn->query($query);
         $user=$result->fetch_assoc();

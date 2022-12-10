@@ -205,7 +205,7 @@ define('DB_NAME', 'c19stroi');
         }, 1000);
         setInterval(function() {
         location.reload();
-        }, 600000);
+        }, 3000000);
     </script>    
 
     <script src="js/jquery-3.6.0.js" type="text/javascript"></script>

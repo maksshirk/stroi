@@ -10,7 +10,7 @@ include 'table_config.php';
 <?php 
 foreach ($result_3 as $value) { ?>
 <?php if ($value['have_units'] != 1) { ?>
-    <table id="mytable3" class="table table-bordered border border-dark table-hover table-responsive ">
+  <div style="text-align: center;"><table id="mytable3" style="display: inline-block;" class="table table-bordered border border-dark table-hover table-responsive ">
       <thead>
         <tr>
           <th class="table_column">Подразделение</th>
@@ -45,7 +45,7 @@ foreach ($result_3 as $value) { ?>
             <td><?=$value['refresh_data'] ?></td>
           </tr> 
       </tbody>
-    </table>  
+    </table></div>
     <table id="mytable_gun" class="table table-bordered border border-dark table-hover table-responsive table-striped">
     <h6 align="center"><b>Расход оружия в подразделении</b></h6>  
     <thead>
