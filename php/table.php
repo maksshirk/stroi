@@ -301,11 +301,11 @@ else { ?>
       fetch_data();  
       $(document).on('click', '#btn_add', function(){  
            var division = $('#division').text();  
-           var title = $('#title').text();  
+           var title = $('#title_select').val();  
            var unit = $('#unit').text();  
            var reason = $('#reason').text();  
            var place = $('#place').text();  
-           var time = $('#time').text();  
+           var time = $('#time_date').val();  
            if(division == '')  
            {  
                 alert("Введите подразделение");  
@@ -442,6 +442,6 @@ else { ?>
         }, 1000);
         setInterval(function() {
         location.reload();
-        }, 60000);
+        }, 300000);
     </script>    
 <script src="/js/table_script.js" type="text/javascript"></script>

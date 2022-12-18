@@ -1,9 +1,6 @@
 <?php  
 include "ChromePhp.php";
-define('DB_HOST', 'localhost');
-define('DB_USER', 'c19stroi');
-define('DB_PASSWORD', 'F9-Siro@');
-define('DB_NAME', 'c19stroi');
+include "config.php";
 $connect = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 $id_category = $_POST["id_category"];
 $sql = "SELECT * FROM categories WHERE `id` = $id_category";  
@@ -46,7 +43,7 @@ array_push ($table_source["rows"], array(
      "uni_id" => $uni_id
 )); 
 
-ChromePhp::log($table_source);
+
 
 $json_array = json_encode($table_source, JSON_UNESCAPED_UNICODE);
 

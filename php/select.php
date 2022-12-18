@@ -1,9 +1,7 @@
 <?php  
 include "ChromePhp.php";
-define('DB_HOST', 'localhost');
-define('DB_USER', 'c19stroi');
-define('DB_PASSWORD', 'F9-Siro@');
-define('DB_NAME', 'c19stroi');
+include "config.php";
+
 $connect = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 $output = '';  
 $id_category = $_POST["id_category"];
@@ -51,11 +49,30 @@ if ($have_units == 0) {
         <tr>  
             <td>'.$index.'</td>  
             <td id="division" contenteditable></td>  
-            <td id="title" contenteditable></td>  
+            <td id="title" contenteditable>
+                <select id="title_select">
+                    <option>Рядовой</option>
+                    <option>Ефрейтор</option>
+                    <option>Младший сержант</option>
+                    <option>Сержант</option>
+                    <option>Старший сержант</option>
+                    <option>Старшина</option>
+                    <option>Прапорщик</option>
+                    <option>Старший прапорщик</option>
+                    <option>Лейтенант</option>
+                    <option>Старший лейтенант</option>
+                    <option>Капитан</option>
+                    <option>Майор</option>
+                    <option>Подполковник</option>
+                    <option>Полковник</option>
+                </select>
+            </td>  
             <td id="unit" contenteditable></td>  
             <td id="reason" contenteditable></td> 
             <td id="place" contenteditable></td>  
-            <td id="time" contenteditable></td> 
+            <td id="time" contenteditable>
+                <input type="date" id="time_date" name="Выберите дату отсутствия">
+            </td> 
             <td><button type="button" name="btn_add" id="btn_add" class="btn btn-xs btn-success">+</button></td>  
         </tr>';
     }
